@@ -9,18 +9,18 @@ Seneca Polytechnic
 
 ## Overview
 This project aims to classify text as **human-written** or **AI-generated** using two different approaches:
-1. **Classic Machine Learning** — TF-IDF + Logistic Regression
-2. **Transformer-based Fine-Tuning** — DistilBERT from Hugging Face Transformers
+1. **Classic Machine Learning**: TF-IDF + Logistic Regression
+2. **Transformer-based Fine-Tuning**: DistilBERT from Hugging Face Transformers
 
 We compare the models in terms of accuracy, precision, recall, and F1-score.
 
 ---
 
 ## Dataset
-- **Source:** Kaggle — AI vs Human Text Dataset
+- **Source:** Kaggle, AI vs Human Text Dataset
 - **Labels: Generated Column**
-  - `0.0` → Human-written
-  - `1.0` → AI-generated
+  - `0.0`: Human-written
+  - `1.0`: AI-generated
 - Dataset was preprocessed with tokenization, stopword removal, punctuation stripping, and lemmatization.
 - For Transformer fine-tuning, a **stratified 5,000-row sample** was used for efficiency.
 
