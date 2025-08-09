@@ -47,7 +47,7 @@ We compare the models in terms of accuracy, precision, recall, and F1-score.
 |-------|----------|-----------|--------|----------|
 | TF-IDF + Logistic Regression (Full Dataset) | 0.95 | 0.97 | 0.89 | 0.93 |
 | TF-IDF + Logistic Regression (5K Subset) | 0.87 | 1.00 | 0.65 | 0.79|
-| DistilBERT (5K Subset) | 0.97 | X.XX | X.XX | 0.96 |
+| DistilBERT (5K Subset) | 0.97 | 0.96 | 0.96 | 0.96 |
 
 ---
 
