@@ -27,14 +27,19 @@ We compare the models in terms of accuracy, precision, recall, and F1-score.
 ---
 
 ## Methodology
+### 1. Data Exploration & Preprocessing
+- Downloaded and loaded the dataset.
+-	Performed a thorough exploratory data analysis (EDA). Analyze text length, vocabulary, and class distribution.
+-	Created a robust data preprocessing pipeline. 
+-	Decided on tokenization, cleaning, and how to handle text lengths.
 
-### 1. Classic Model (TF-IDF + Logistic Regression)
+### 2. Classic Model (TF-IDF + Logistic Regression)
 - Preprocessing: Tokenization, stopword removal, punctuation removal, lemmatization
 - Feature extraction: TF-IDF vectorization
 - Classifier: Logistic Regression (`scikit-learn`)
 - Experiments with **full dataset** and **5K stratified subset**
 
-### 2. Transformer Model (DistilBERT)
+### 3. Transformer Model (DistilBERT)
 - Tokenization using `AutoTokenizer` from Hugging Face
 - Fine-tuned for binary classification using `Trainer` API
 - Used stratified 5K sample for faster training
